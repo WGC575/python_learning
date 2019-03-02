@@ -30,3 +30,36 @@ import os
 #use os.remove("filename") to delete a file
 #use os.path.exists("filename") to check existence
 #use os.rmdir("directoryname") to remove a directory
+column_1 = {}
+column_2 = {}
+column_3 = {}
+datafile = open("datafile_1", "rt")
+
+def readData(datafile):
+    data = {}
+    i = 0
+    for input in datafile:
+        data[i] = input.strip()
+        i += 1
+    return data
+
+#reading one column file
+datafile = open("datafile_1", "rt")
+column_1 = readData(datafile)
+datafile = open("datafile_3", "rt")
+column_2 = readData(datafile)
+datafile = open("datafile_2", "rt")
+column_3 = readData(datafile)
+print(column_1)
+print(column_2)
+print(column_3)
+
+i = 0
+data_formatted = {}
+for i in column_1:
+    data_formatted[column_1[i]] = {}
+    data_formatted[column_1[i]][True] = int(column_2[i])
+    data_formatted[column_1[i]][False] = int(column_3[i])
+print(data_formatted)
+
+
