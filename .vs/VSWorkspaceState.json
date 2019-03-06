@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\__pycache__"
   ],
+  "SelectedNode": "\\22_zipper.py",
   "PreviewInSolutionExplorer": false
 }

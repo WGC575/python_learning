@@ -3,9 +3,15 @@
 list_a = ["Apple", "Banana", "Cherry"]
 print(list_a[0])
 
+#List should always be declared before using
+list_ini = []
+
 #In python, writing a loop is not like other language, which should be taken good care of
 for x in list_a:
     print(x)
+
+#Use * could output the content, similar to that of C++
+print(*list_a)
 
 #Access member with index
 print(list_a[1])
@@ -21,6 +27,12 @@ print(len(list_a))
 list_a.append("Orange")
 list_a.insert(3, "Pear")
 print(list_a)
+
+#Lists could be simply added together， even if the types are different
+array_1 = ['1', '2', '3']
+array_2 = [4, 5, 6]
+array_3 = array_1 + array_2
+print(array_3)
 
 #Remove items
 list_a.remove("Pear")   #use remove to delete with specific content
