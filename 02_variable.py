@@ -9,6 +9,13 @@ print(carname)
 x = 5
 y = 10
 z = x + y
+print(x)
+
+#boolean
+choice = False
+
+#float
+pi = 3.14
 
 #naming rules
 #A variable name must start with a letter or the underscore character

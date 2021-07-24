@@ -34,5 +34,17 @@ print(x.replace("W", "C"))
 #spilt the string with specific separator if found in the string
 print(x.split("o"))
 
+#Single quotation marks will be included in double quotation marks.
+print("I'm afraid I won't be able to make it")
+
+#Use \" to include double quotation marks in strings.
+print("\"Good!\", he said.")
 
 
+#formatting
+show = "GOT"
+name_1 = "Daenerys"
+name_2 = "Jon"
+name_3 = "Tyrion"
+seasons = 8
+print(f"The show is called {show} had charaters like {name_1}, {name_2}, and {name_3} in all {seasons} seasons.")
