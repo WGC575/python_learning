@@ -7,11 +7,17 @@ import numpy as np
 
 n = np.dtype(np.int32)
 n= np.dtype('i4')
+print(n)
 #int32
 
-
+#structured data object
 n_structure = np.dtype([('age', np.int8)])
+print(n_structure)
 #[('age', 'i1')]
 
+#combine ndarray with data object
 n_ndarray = np.dtype([('age', np.int8)])
-a = np.array([()])
+a = np.array([(10, ), (20, ), (30, )], dtype = n_ndarray)
+print(a['age'])
+#[10 20 30]
+
