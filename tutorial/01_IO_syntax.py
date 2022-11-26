@@ -7,7 +7,7 @@ class my_class(object):
 
 #print is used to output variables where '+' could be used either as a combinator of different types 
 #or a operator to add two numbers
-    print(x, y, z, sep = ', ')
+print("x", "y", "z", sep = ', ')
 
 #input()
 #input from command-line
