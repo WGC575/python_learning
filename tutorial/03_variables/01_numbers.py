@@ -10,6 +10,15 @@ z = 1j  #complex
 print("z = 1j")
 print()
 
+#binary
+num = 11
+print("turn 11 to binary: "'{0:b}'.format(num))
+b = f'{num:b}'
+print("use f'{num:b}' also works: ", b)
+# turning it to a string (binary form). This doesn't mean the variable is a binary one.
+print("here, the type of b is: ", type(b))
+print()
+
 #use type() to verify the variable type
 print("x:", type(x))
 print("y:", type(y))
@@ -56,7 +65,6 @@ print("sin(30 degree):", '{:.2f}'.format(sin(pi/6)))
 print("cos(30 degree):", '{:10.2f}'.format(cos(pi/6)))
 print("tan(30 degree):", '{:010.2f}'.format(tan(pi/6)))
 print("tanh(30 degree):", '{:.2f}'.format(tanh(pi/6)))
-
 
 
 
