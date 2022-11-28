@@ -44,10 +44,18 @@ print()
 #&(=)
 x = 0x23
 print(x)
-
+print()
 
 #|(=)
+x = 0x11
+y = 0x01
+print()
+# even if this is defined with hexadecimal, when using print(type(x)), it will indicate that the type for the variable is still int
+
 #^(=)
+y = 0x01 ^ 0x03
+print(y)
+
 #>>(=)
 #<<(=) 
 
