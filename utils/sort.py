@@ -53,6 +53,33 @@ def merge_sort(arr):
 
 # example usage
 
+#arr = [5, 2, 8, 3, 1, 6]
+#sorted_arr = merge_sort(arr)
+#print(sorted_arr)
+
+# 3. quick sort
+
+def quick_sort(arr, start = 0, end = None):
+    if end is None:
+        end = len(arr) - 1
+    if start < end:
+        pivot_index = partition(arr, start, end)
+        quick_sort(arr, start, pivot_index - 1)
+        quick_sort(arr, pivot_index + 1, end)
+    return arr
+
+def partition(arr, start, end):
+    pivot = arr[end]
+    i = start - 1
+    for j in range(start, end):
+        if arr[j] < pivot:
+            i += 1
+            arr[i], arr[j] = arr[j], arr[i]
+    arr[i + 1], arr[end] = arr[end], arr[i + 1]
+    return i + 1
+
+# example usage
+
 arr = [5, 2, 8, 3, 1, 6]
-sorted_arr = merge_sort(arr)
+sorted_arr = quick_sort(arr)
 print(sorted_arr)
